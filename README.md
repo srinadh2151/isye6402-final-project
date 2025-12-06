@@ -1,4 +1,4 @@
-# My Project
+# isye6402-final-project
 
 A new project repository.
 
