@@ -402,6 +402,29 @@ python Multi_Horizon_Forecasting.py
 - Train-test split strictly temporal
 - All results validated and verified
 
+---
+
+## Team Contributions
+
+### Srinadh Raja Nidadana (50%)
+- Exploratory data analysis and stationarity testing
+- ARIMA and SARIMA model development
+- Machine learning implementation (XGBoost, LightGBM)
+- Multi-horizon forecast evaluation
+- Literature review and model comparison
+- Visualization and documentation
+
+### Park, Hyung Min (50%)
+- Seasonal decomposition analysis
+- VAR analysis with Granger causality
+- Feature engineering pipeline
+- Model validation and diagnostics
+- Multi-horizon analysis
+- Report writing and compilation
+
+**Collaboration:** Both members contributed to all aspects of the project, including traditional methods, machine learning, validation, and documentation.
+
+
 ## References
 
 ### Data Sources
