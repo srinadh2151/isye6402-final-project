@@ -189,7 +189,7 @@ axes[1].grid(True, alpha=0.3)
 plt.tight_layout()
 output_path = os.path.join(script_dir, 'arima_sarima_forecasts.png')
 plt.savefig(output_path, dpi=300, bbox_inches='tight')
-print("\n✓ Forecast plots saved as 'arima_sarima_forecasts.png'")
+print("\nForecast plots saved as 'arima_sarima_forecasts.png'")
 
 # ============================================================================
 # RESIDUAL ANALYSIS
@@ -229,7 +229,7 @@ axes[1, 1].grid(True, alpha=0.3)
 plt.tight_layout()
 output_path = os.path.join(script_dir, 'residual_analysis.png')
 plt.savefig(output_path, dpi=300, bbox_inches='tight')
-print("✓ Residual analysis plots saved as 'residual_analysis.png'")
+print("Residual analysis plots saved as 'residual_analysis.png'")
 
 print("\n" + "="*80)
 print("MODELING COMPLETE!")

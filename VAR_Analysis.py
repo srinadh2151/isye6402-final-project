@@ -186,7 +186,7 @@ axes[1].grid(True, alpha=0.3)
 plt.tight_layout()
 output_path = os.path.join(script_dir, 'var_forecasts.png')
 plt.savefig(output_path, dpi=300, bbox_inches='tight')
-print("\n✓ VAR forecast plots saved as 'var_forecasts.png'")
+print("\n VAR forecast plots saved as 'var_forecasts.png'")
 
 # ============================================================================
 # IMPULSE RESPONSE ANALYSIS
@@ -202,7 +202,7 @@ plt.suptitle('Impulse Response Functions', fontsize=16, fontweight='bold', y=0.9
 plt.tight_layout()
 output_path = os.path.join(script_dir, 'impulse_response.png')
 plt.savefig(output_path, dpi=300, bbox_inches='tight')
-print("\n✓ Impulse response plots saved as 'impulse_response.png'")
+print("\n Impulse response plots saved - 'impulse_response.png'")
 
 # ============================================================================
 # FORECAST ERROR VARIANCE DECOMPOSITION
@@ -219,7 +219,7 @@ plt.suptitle('Forecast Error Variance Decomposition', fontsize=16, fontweight='b
 plt.tight_layout()
 output_path = os.path.join(script_dir, 'fevd.png')
 plt.savefig(output_path, dpi=300, bbox_inches='tight')
-print("\n✓ FEVD plots saved as 'fevd.png'")
+print("\n FEVD plots saved as 'fevd.png'")
 
 print("\n" + "="*80)
 print("VAR ANALYSIS COMPLETE!")

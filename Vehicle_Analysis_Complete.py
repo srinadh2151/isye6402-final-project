@@ -111,7 +111,7 @@ ax5.text(0.05, 0.95, f'Correlation: {corr:.4f}', transform=ax5.transAxes,
 
 output_path = os.path.join(script_dir, 'exploratory_analysis.png')
 plt.savefig(output_path, dpi=300, bbox_inches='tight')
-print("\n✓ Exploratory analysis plot saved as 'exploratory_analysis.png'")
+print("\nExploratory analysis plot saved as 'exploratory_analysis.png'")
 
 # Calculate correlation
 print(f"\nCorrelation between Total Sales and New Orders: {corr:.4f}")
@@ -219,7 +219,7 @@ axes[3, 1].grid(True, alpha=0.3)
 plt.tight_layout()
 output_path = os.path.join(script_dir, 'seasonal_decomposition.png')
 plt.savefig(output_path, dpi=300, bbox_inches='tight')
-print("\n✓ Seasonal decomposition plot saved as 'seasonal_decomposition.png'")
+print("\nSeasonal decomposition plot saved as 'seasonal_decomposition.png'")
 
 # Calculate strength of seasonality
 def seasonal_strength(decomposition):

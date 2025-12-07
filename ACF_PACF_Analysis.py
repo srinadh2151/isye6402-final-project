@@ -50,7 +50,7 @@ plot_pacf(df['Orders_Diff'].dropna(), lags=40, ax=axes[3, 1], title='PACF: New O
 plt.tight_layout()
 output_path = os.path.join(script_dir, 'acf_pacf_analysis.png')
 plt.savefig(output_path, dpi=300, bbox_inches='tight')
-print("\n✓ ACF/PACF analysis plot saved as 'acf_pacf_analysis.png'")
+print("\nACF/PACF analysis plot saved as 'acf_pacf_analysis.png'")
 
 # Calculate and display ACF values
 print("\nACF Values (First 12 lags):")

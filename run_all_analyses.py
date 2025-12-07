@@ -22,7 +22,7 @@ outputs_dir = os.path.join(script_dir, 'outputs')
 # Create outputs directory if it doesn't exist
 if not os.path.exists(outputs_dir):
     os.makedirs(outputs_dir)
-    print("✓ Created 'outputs' directory")
+    print("Created 'outputs' directory")
 
 # List of scripts to run in order
 scripts = [
@@ -51,7 +51,7 @@ for i, (script, description) in enumerate(scripts, 1):
                               timeout=300)  # 5 minute timeout
         
         if result.returncode == 0:
-            print(f"✓ {script} completed successfully")
+            print(f"{script} completed successfully")
             results.append((script, 'SUCCESS', None))
         else:
             print(f"✗ {script} failed with return code {result.returncode}")
@@ -90,12 +90,12 @@ for plot_file in plot_files:
     if os.path.exists(source_path):
         try:
             os.rename(source_path, dest_path)
-            print(f"✓ Moved {plot_file} to outputs/")
+            print(f"Moved {plot_file} to outputs/")
             moved_count += 1
         except Exception as e:
             print(f"✗ Failed to move {plot_file}: {str(e)}")
 
-print(f"\n✓ Moved {moved_count} plot files to outputs/ directory")
+print(f"\nMoved {moved_count} plot files to outputs/ directory")
 
 # Print summary
 print(f"\n{'='*80}")
@@ -112,7 +112,7 @@ print(f"\nDetailed Results:")
 print("-" * 80)
 
 for script, status, error in results:
-    status_symbol = "✓" if status == 'SUCCESS' else "✗"
+    status_symbol = "True" if status == 'SUCCESS' else "False"
     print(f"{status_symbol} {script:40s} {status}")
     if error and status != 'SUCCESS':
         print(f"  Error: {error[:100]}...")

@@ -134,7 +134,7 @@ print("\nTraining XGBoost model...")
 # XGBoost parameters
 xgb_params = {
     'objective': 'reg:squarederror',
-    'max_depth': 6,
+    'max_depth': 5,
     'learning_rate': 0.1,
     'n_estimators': 200,
     'subsample': 0.8,
@@ -189,7 +189,7 @@ print("\nTraining LightGBM model...")
 lgb_params = {
     'objective': 'regression',
     'metric': 'rmse',
-    'max_depth': 6,
+    'max_depth': 5,
     'learning_rate': 0.1,
     'n_estimators': 200,
     'subsample': 0.8,
@@ -352,7 +352,7 @@ plt.suptitle('Machine Learning Analysis: Gradient Boosting Methods',
 
 output_path = os.path.join(script_dir, 'ml_gradient_boosting.png')
 plt.savefig(output_path, dpi=300, bbox_inches='tight')
-print("\n✓ ML gradient boosting plots saved as 'ml_gradient_boosting.png'")
+print("\nML gradient boosting plots saved as 'ml_gradient_boosting.png'")
 
 print("\n" + "="*80)
 print("MACHINE LEARNING ANALYSIS COMPLETE!")
